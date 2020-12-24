@@ -1,8 +1,6 @@
 // for (let i=0;i<10;i++){
 //     document.writeln("so là" + i)
 // }
-
-
 // let num1: number = 1;
 //
 // function letDeclaration() {
@@ -21,15 +19,13 @@
 //     console.log(num4)
 // }
 // letDeclaration()
-
-let x: number=10,y=20;
-if (x>y){
-
-    console.log("x > y")
+var x = 10, y = 20;
+if (x > y) {
+    console.log("x > y");
 }
-else if (x>y){
-    console.log("x<y")
+else if (x > y) {
+    console.log("x<y");
 }
-else if (x == y){
-    console.log("x=y")
+else if (x == y) {
+    console.log("x=y");
 }
