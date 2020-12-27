@@ -1,0 +1,9 @@
+<h2>LIST STUDENT</h2>
+<p> ID : {{student.id}}</p>
+<p> Name : {{student.name}}</p>
+<p>Age: {{student.age}}</p>
+<p> Mark : {{student.mark}}</p>
+<input type="number" (change)="onChangeMark($event.target.value) "min="0" max="10">
+<br>
+<input placeholder="nhập image" type="text" (change)="onChangeImg($event.target.value)">
+<p> Image : </p><img [src]="student.image">

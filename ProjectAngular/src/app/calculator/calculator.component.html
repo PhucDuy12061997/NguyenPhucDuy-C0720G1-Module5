@@ -1,0 +1,16 @@
+<br>
+<b>Profile Component Template </b><br>
+<b>Awesome Calculator</b><br>
+<input type="text" placeholder="Nhập số thứ nhất " (change)="onSoAChange($event.target.value)">
+<select (change)="onSelectChange($event.target.value)">
+  <option value="+">+</option>
+  <option value="/">/</option>
+  <option value="*">*</option>
+  <option value="-">-</option>
+</select>
+<input type="text" placeholder="Nhập số thứ hai " (change)="onSoBChange($event.target.value)">
+<br>
+<input type="submit" value="Thực Thi" (click)="calculate()">
+
+<p> kết quả là : {{ketQua}} </p>
+

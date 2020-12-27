@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c255e468-8a23-4966-a167-5facc20ef1d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bai_tap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-github-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-github-project/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-github-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-github-project/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-github-project/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/search-github-project/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh/testUD/.idea/testUD.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh/testUD/testUD.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh/testUD/testUD.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03AngularOverview/thuc_hanh/thayDoiFrontSize/src/app/fontSizeEditor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thuc_hanh/searchGit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ProjectAngular" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,6 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608799416779</updated>
       <workItem from="1608799418627" duration="3179000" />
+      <workItem from="1608803322249" duration="1303000" />
+      <workItem from="1608859246394" duration="1980000" />
     </task>
     <servers />
   </component>
@@ -76,10 +70,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1608800655976" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608799674607">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608860175192">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608799674607" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608860175192" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1608800112077">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
