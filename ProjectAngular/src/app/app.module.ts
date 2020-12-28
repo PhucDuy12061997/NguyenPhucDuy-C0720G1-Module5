@@ -8,6 +8,11 @@ import { ListStudentComponent } from './list-student/list-student.component';
 import { PetInformationComponent } from './pet-information/pet-information.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { PickColorComponent } from './pick-color/pick-color.component';
+import { NameCardComponent } from './name-card/name-card.component';
+import { HackernewsComponent } from './hackernews/hackernews.component';
+import { DemoCustomerComponent } from './demo-customer/demo-customer.component';
+import {FormsModule} from '@angular/forms';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
 // import { PetInformationComponent } from './pet-information/pet-information.component';
 
 @NgModule({
@@ -18,11 +23,16 @@ import { PickColorComponent } from './pick-color/pick-color.component';
     PetInformationComponent,
     CalculatorComponent,
     PickColorComponent,
+    NameCardComponent,
+    HackernewsComponent,
+    DemoCustomerComponent,
+    StudentDetailComponent,
     // PetInformationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

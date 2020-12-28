@@ -15,6 +15,7 @@ export class CalculatorComponent implements OnInit {
   constructor() {
   }
 
+
   onSoAChange(value) {
     this.soA = Number(value);
   }

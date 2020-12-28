@@ -1,9 +1,37 @@
 <h2>LIST STUDENT</h2>
-<p> ID : {{student.id}}</p>
-<p> Name : {{student.name}}</p>
-<p>Age: {{student.age}}</p>
-<p> Mark : {{student.mark}}</p>
-<input type="number" (change)="onChangeMark($event.target.value) "min="0" max="10">
-<br>
-<input placeholder="nhập image" type="text" (change)="onChangeImg($event.target.value)">
-<p> Image : </p><img [src]="student.image">
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>AGE</th>
+    <th>NAME</th>
+    <th>MARK</th>
+    <th>RESULT</th>
+    <th>IMG</th>
+    <th>ACTION</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let student of student">
+    <td> {{student.id}}</td>
+    <td> {{student.age}}</td>
+    <td> {{student.name}}</td>
+    <td> {{student.mark}}</td>
+<!--    <td>{{student.result}}</td>-->
+    <td>
+      <div *ngIf="student.mark > 5; then thenBlock else elseBlock" ></div>
+      <ng-template #thenBlock  ><p style="color: green">Pass</p></ng-template>
+      <ng-template #elseBlock  ><p style="color: red">Fail</p></ng-template>
+
+    </td>
+    <td><img [src]="student.image" style="height: 50px;width: 50px"></td>
+    <td>
+      <button class="btn btn-success" type="button" (click)="getDetail(student)">DETAIL</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<div>
+  <app-student-detail [student]="studentDetail"></app-student-detail>
+</div>
