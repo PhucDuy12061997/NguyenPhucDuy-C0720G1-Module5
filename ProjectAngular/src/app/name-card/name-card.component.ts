@@ -14,4 +14,5 @@ export class NameCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }

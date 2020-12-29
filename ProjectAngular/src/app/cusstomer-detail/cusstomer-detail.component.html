@@ -1,0 +1,14 @@
+<br> <br>
+<h2>List Customer</h2>
+<p>STT : {{customer.no}}</p>
+<p>NAME : {{customer.name}}</p>
+<p>AGE : {{customer.age}}</p>
+<input type="number"(change)="onChangeAge($event.target.value)"min="18" max="80">
+<p>PHONE : {{customer.phone}}</p>
+<p>ADDRESS : {{customer.address}}</p>
+<p>CITY : {{customer.city}}</p>
+<p>COUNTRY : {{customer.country}}</p>
+<p>STATE : {{customer.state}}</p>
+<p>IMAGE : <img [src]="customer.image" style="width: 100px;height: 150px"></p>
+<input>
+

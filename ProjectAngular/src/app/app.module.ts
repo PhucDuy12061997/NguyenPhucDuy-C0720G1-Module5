@@ -13,6 +13,10 @@ import { HackernewsComponent } from './hackernews/hackernews.component';
 import { DemoCustomerComponent } from './demo-customer/demo-customer.component';
 import {FormsModule} from '@angular/forms';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { VoteAppComponent } from './vote-app/vote-app.component';
+import { CountdownTimeComponent } from './countdown-time/countdown-time.component';
+import { CusstomerDetailComponent } from './cusstomer-detail/cusstomer-detail.component';
 // import { PetInformationComponent } from './pet-information/pet-information.component';
 
 @NgModule({
@@ -27,6 +31,11 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
     HackernewsComponent,
     DemoCustomerComponent,
     StudentDetailComponent,
+    ProgressBarComponent,
+    VoteAppComponent,
+    CountdownTimeComponent,
+    CusstomerDetailComponent,
+
     // PetInformationComponent
   ],
   imports: [

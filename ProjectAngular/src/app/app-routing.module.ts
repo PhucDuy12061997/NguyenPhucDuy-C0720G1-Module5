@@ -9,6 +9,10 @@ import {NameCardComponent} from './name-card/name-card.component';
 import {DemoCustomerComponent} from './demo-customer/demo-customer.component';
 import {HackernewsComponent} from './hackernews/hackernews.component';
 import {StudentDetailComponent} from './student-detail/student-detail.component';
+import {ProgressBarComponent} from './progress-bar/progress-bar.component';
+import {VoteAppComponent} from './vote-app/vote-app.component';
+import {CountdownTimeComponent} from './countdown-time/countdown-time.component';
+import {CusstomerDetailComponent} from './cusstomer-detail/cusstomer-detail.component';
 
 const routes: Routes = [
   {path: 'fontsize', component: FontsizeComponent},
@@ -20,7 +24,10 @@ const routes: Routes = [
   {path: 'customer', component: DemoCustomerComponent},
   {path: 'hacker-news', component: HackernewsComponent},
   {path: 'student-detail', component: StudentDetailComponent},
-
+  {path: 'progress-bar', component: ProgressBarComponent},
+  {path: 'vote-app', component: VoteAppComponent},
+  {path: 'countdown-time', component: CountdownTimeComponent},
+  {path: 'customer-detail',component: CusstomerDetailComponent}
 ];
 
 @NgModule({
