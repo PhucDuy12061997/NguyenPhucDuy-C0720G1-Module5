@@ -25,12 +25,11 @@
     </td>
     <td><img [src]="student.image" style="height: 50px;width: 50px"></td>
     <td>
-      <!--      <button class="btn btn-success" type="button" (click)="getDetail(student)">DETAIL</button>-->
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
               (click)="getDetail(student)">
         DETAIL
       </button>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#update"
               (click)="getUpdateNew(student)">
         Edit
       </button>
@@ -75,23 +74,40 @@
       <div class="modal-body">
         <!--        <app-cusstomer-detail [customer]="CustomerDetai"></app-cusstomer-detail>-->
         <div style="grid-column-end: auto">
-         <form [formGroup]="formCreate" (ngSubmit)="getCreateNew()" >
-           <label>Id :</label>
-           <input type="text" formControlName="id">
-           <label>Name :</label>
-           <input type="text" formControlName="name">
-           <label>AGE :</label>
-           <input type="text" formControlName="age">
-           <label>Result :</label>
-           <input type="text" formControlName="result">
-           <label>Mark :</label>
-           <input type="text" formControlName="mark">
-           <label>Image :</label>
-           <input type="text" formControlName="image">
+          <form [formGroup]="formCreate" (ngSubmit)="getCreateNew()">
+            <label>Id :</label>
+            <input type="text" formControlName="id">
+            <div *ngIf="formCreate.get('id').invalid&&formCreate.get('id').touched"><span style="color: red"
+                                                                                          *ngIf="formCreate.get('id').hasError('required')">ID is Required</span>
+            </div>
+            <label>Name :</label>
+            <input type="text" formControlName="name">
+            <div *ngIf="formCreate.get('name').invalid&&formCreate.get('name').touched"><span style="color: red"
+                                                                                              *ngIf="formCreate.get('name').hasError('required')">Name is Required</span>
+            </div>
+            <label>AGE :</label>
+            <input type="text" formControlName="age">
+            <div *ngIf="formCreate.get('age').invalid&&formCreate.get('age').touched"><span style="color: red"
+                                                                                              *ngIf="formCreate.get('age').hasError('required')">Age is Required</span>
+            </div>
+            <label>Result :</label>
+            <input type="text" formControlName="result">
+            <div *ngIf="formCreate.get('result').invalid&&formCreate.get('result').touched"><span style="color: red"
+                                                                                              *ngIf="formCreate.get('result').hasError('required')">Result is Required</span>
+            </div>
+            <label>Mark :</label>
+            <input type="text" formControlName="mark">
+            <div *ngIf="formCreate.get('mark').invalid&&formCreate.get('mark').touched"><span style="color: red"
+                                                                                              *ngIf="formCreate.get('mark').hasError('required')">Mark is Required</span>
+            </div>
+            <label>Image :</label>
+            <input type="text" formControlName="image">
+            <div *ngIf="formCreate.get('image').invalid&&formCreate.get('image').touched"><span style="color: red"
+                                                                                              *ngIf="formCreate.get('image').hasError('required')">Name is Required</span>
+            </div>
 
 
-
-         </form>
+          </form>
         </div>
 
 
@@ -106,7 +122,10 @@
 </div>
 
 
-<div class="modal fade" id="updateStudent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+
+
+<div class="modal fade" id="update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -118,25 +137,47 @@
       <div class="modal-body">
         <!--        <app-cusstomer-detail [customer]="CustomerDetai"></app-cusstomer-detail>-->
         <div style="grid-column-end: auto">
-          <p>id :
-            <input type="text" [(ngModel)]="id"></p>
-          <p>age :
-            <input type="text" [(ngModel)]="age"></p>
-          <p>name :
-            <input type="text" [(ngModel)]="name"></p>
-          <p>result :
-            <input type="text" [(ngModel)]="result"></p>
-          <p>mark :
-            <input type="text" [(ngModel)]="mark"></p>
-          <p>Image :
-            <input type="text" [(ngModel)]="image"></p>
+          <form [formGroup]="formCreate" (ngSubmit)="getCreateNew()">
+            <label>Id :</label>
+            <input type="text" formControlName="id">
+            <div *ngIf="formCreate.get('id').invalid&&formCreate.get('id').touched"><span style="color: red"
+                                                                                          *ngIf="formCreate.get('id').hasError('required')">ID is Required</span>
+            </div>
+            <label>Name :</label>
+            <input type="text" formControlName="name">
+            <div *ngIf="formCreate.get('name').invalid&&formCreate.get('name').touched"><span style="color: red"
+                                                                                              *ngIf="formCreate.get('name').hasError('required')">Name is Required</span>
+            </div>
+            <label>AGE :</label>
+            <input type="text" formControlName="age">
+            <div *ngIf="formCreate.get('age').invalid&&formCreate.get('age').touched"><span style="color: red"
+                                                                                            *ngIf="formCreate.get('age').hasError('required')">Age is Required</span>
+            </div>
+            <label>Result :</label>
+            <input type="text" formControlName="result">
+            <div *ngIf="formCreate.get('result').invalid&&formCreate.get('result').touched"><span style="color: red"
+                                                                                                  *ngIf="formCreate.get('result').hasError('required')">Result is Required</span>
+            </div>
+            <label>Mark :</label>
+            <input type="text" formControlName="mark">
+            <div *ngIf="formCreate.get('mark').invalid&&formCreate.get('mark').touched"><span style="color: red"
+                                                                                              *ngIf="formCreate.get('mark').hasError('required')">Mark is Required</span>
+            </div>
+            <label>Image :</label>
+            <input type="text" formControlName="image">
+            <div *ngIf="formCreate.get('image').invalid&&formCreate.get('image').touched"><span style="color: red"
+                                                                                                *ngIf="formCreate.get('image').hasError('required')">Name is Required</span>
+            </div>
+
+
+          </form>
         </div>
 
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" (click)="getUpdateNew()">Save update</button>
+        <button type="button" class="btn btn-primary" (click)="getUpdateNew()">Save changes</button>
 
       </div>
     </div>

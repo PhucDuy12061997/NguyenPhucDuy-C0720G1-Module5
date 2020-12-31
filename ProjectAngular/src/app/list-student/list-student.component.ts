@@ -63,13 +63,17 @@ export class ListStudentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.formCreate = this.formBuilder = ({
-      id: ['', Validators.required()),
-      age: ['',Validators.required()],
-      name: ['',Validators.required()],
+    this.formCreate = this.formBuilder.group({
+      id: ['', Validators.required],
+      name: ['', Validators.required],
+      age: ['', Validators.required],
+      mark: ['', Validators.required],
+      result: ['', Validators.required],
+      image: ['', Validators.required]
 
-  ]
-  })
+    });
+
+
   }
 
 
@@ -81,13 +85,19 @@ export class ListStudentComponent implements OnInit {
   }
 
   getCreateNew() {
-    this.student.push({
-      id: this.id,
-      age: this.age,
-      name: this.name,
-      mark: this.mark,
-      result: this.result,
-      image: this.image,
+    // console.log(this.formCreate.value)
+    this.student.unshift(this.formCreate.value);
+  }
+
+  getUpdateNew(student: Istudent) {
+    this.formCreate.setValue({
+      id: student.id,
+      age: student.age,
+      name: student.name,
+      mark: student.mark,
+      result: student.result,
+      image: student.image
     });
+
   }
 }
