@@ -4,6 +4,7 @@ export interface Istudent {
   age: number;
   name: string;
   mark: number;
+  result:string;
   image: string;
 }
 @Component({

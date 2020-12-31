@@ -1,6 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {min} from 'rxjs/operators';
 
- interface Istudent {
+interface Istudent {
   id: number;
   age: number;
   name: string;
@@ -23,7 +25,7 @@ export class ListStudentComponent implements OnInit {
     result: 'pass',
     mark: 10,
     image: 'https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg'
-,
+    ,
   },
     {
       id: 2,
@@ -54,24 +56,38 @@ export class ListStudentComponent implements OnInit {
     },
 
   ];
+  formCreate: FormGroup;
 
-  constructor() {
+
+  constructor(private  formBuilder: FormBuilder) {
   }
 
   ngOnInit(): void {
+    this.formCreate = this.formBuilder = ({
+      id: ['', Validators.required()),
+      age: ['',Validators.required()],
+      name: ['',Validators.required()],
+
+  ]
+  })
   }
 
-  // onChangeMark(value: number) {
-  //   this.student.mark = value;
-  // }
-  //
-  // onChangeImg(value: string) {
-  //   this.student.image = value;
-  // }
+
   studentDetail: Istudent;
 
 
   getDetail(student: Istudent) {
-    this.studentDetail=student;
+    this.studentDetail = student;
+  }
+
+  getCreateNew() {
+    this.student.push({
+      id: this.id,
+      age: this.age,
+      name: this.name,
+      mark: this.mark,
+      result: this.result,
+      image: this.image,
+    });
   }
 }

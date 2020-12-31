@@ -11,13 +11,16 @@ import { PickColorComponent } from './pick-color/pick-color.component';
 import { NameCardComponent } from './name-card/name-card.component';
 import { HackernewsComponent } from './hackernews/hackernews.component';
 import { DemoCustomerComponent } from './demo-customer/demo-customer.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { VoteAppComponent } from './vote-app/vote-app.component';
 import { CountdownTimeComponent } from './countdown-time/countdown-time.component';
 import { CusstomerDetailComponent } from './cusstomer-detail/cusstomer-detail.component';
-// import { PetInformationComponent } from './pet-information/pet-information.component';
+import { TodoAppComponent } from './todo-app/todo-app.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterFinalComponent } from './register-final/register-final.component';
+import { LoginAccountComponent } from './login-account/login-account.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +38,18 @@ import { CusstomerDetailComponent } from './cusstomer-detail/cusstomer-detail.co
     VoteAppComponent,
     CountdownTimeComponent,
     CusstomerDetailComponent,
+    TodoAppComponent,
+    LoginComponent,
+    RegisterFinalComponent,
+    LoginAccountComponent,
 
     // PetInformationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

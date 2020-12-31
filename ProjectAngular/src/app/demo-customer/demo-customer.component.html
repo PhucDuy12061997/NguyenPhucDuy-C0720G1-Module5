@@ -17,7 +17,7 @@
   <tr *ngFor="let customer of customers">
     <td>{{customer.no}}</td>
     <td>{{customer.name}}</td>
-    <td>{{customer.age}}</td>
+    <td>{{customer.age}} </td>
     <!--    <td><img [src]="customer.image" style=" height: 100px;width: 150px"></td>-->
 
     <!--    <td>{{customer.address}}</td>-->
@@ -73,19 +73,19 @@
         <!--        <app-cusstomer-detail [customer]="CustomerDetai"></app-cusstomer-detail>-->
         <div style="grid-column-end: auto">
           <p>No :
-          <input type="text" [(ngModel)]="no"></p>
+            <input type="text" [(ngModel)]="no"></p>
           <p>Name :
-          <input type="text" [(ngModel)]="name"></p>
+            <input type="text" [(ngModel)]="name"></p>
           <p>Age :
-          <input type="text" [(ngModel)]="age"></p>
+            <input type="text" [(ngModel)]="age"></p>
           <p>Phone :
-          <input type="text" [(ngModel)]="phone"></p>
+            <input type="text" [(ngModel)]="phone"></p>
           <p>Address :
-          <input type="text" [(ngModel)]="address"></p>
+            <input type="text" [(ngModel)]="address"></p>
           <p>City :
-          <input type="text" [(ngModel)]="city"></p>
+            <input type="text" [(ngModel)]="city"></p>
           <p>Country :
-          <input type="text" [(ngModel)]="country"></p>
+            <input type="text" [(ngModel)]="country"></p>
           <p>State :
             <input type="text" [(ngModel)]="state"></p>
           <p>Image :

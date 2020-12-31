@@ -60,7 +60,6 @@ export class DemoCustomerComponent implements OnInit {
   }
 
   CustomerDetai: Customer;
-  CustomerAdd: Customer;
 
   getDetail(customer: Customer) {
     this.CustomerDetai = customer;

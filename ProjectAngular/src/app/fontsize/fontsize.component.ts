@@ -3,6 +3,7 @@ import {Component, OnInit} from '@angular/core';
 export interface Istudent {
   id: number;
   name: string;
+  age:number,
   mark: number;
   image: string;
 }
